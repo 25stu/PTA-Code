@@ -66,7 +66,7 @@ int main()
                 {
     //                 int x;
     //                 scanf("%d", &x);
-                    b[i] -= c[i];
+                    b[i] += c[i];
                     if(b[i]>n*10)
                     {
                         printf("impossible\n");
@@ -88,7 +88,11 @@ int main()
             {
                 for(int i = 0;i<6;i++)
                 {
-                    printf("%d ", a[i]);
+                    printf("%d", a[i]);
+                    if(i != 5)
+                    {
+                        printf(" ");
+                    }
                 }
                 printf("\n");
             }
